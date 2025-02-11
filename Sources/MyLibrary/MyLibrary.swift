@@ -2,6 +2,11 @@
 // https://docs.swift.org/swift-book
 
 public struct MyLibrary {
+    
+    public init() {
+        
+    }
+    
     public func sumOfTwoInts(_ a: Int, _ b: Int) -> Int {
         return a + b
     }
