@@ -11,12 +11,13 @@ let package = Package(
             name: "MyLibrary",
             targets: ["MyLibrary"]),
     ],
-    dependencies: [.package(url: "https://github.com/Alamofire/Alamofire", from: "5.10.2")],
+    dependencies: [.package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.10.2")],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "MyLibrary"),
+            name: "MyLibrary",
+            dependencies: ["Alamofire"]),
 
     ]
 )
